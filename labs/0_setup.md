@@ -40,3 +40,18 @@ rhui-REGION-rhel-server-releases/7Server/x86_64                          Red Hat
 rhui-REGION-rhel-server-rh-common/7Server/x86_64                         Red Hat Enterprise Linux Server 7 RH Common (RPMs)                                          228
 repolist: 17,704
 
+
+
+
+[root@ip-172-31-44-186 ec2-user]# grep reilly /etc/passwd
+reilly:x:2800:2800::/home/reilly:/bin/bash
+[root@ip-172-31-44-186 ec2-user]# grep frankola /etc/passwd
+frankola:x:2900:2900::/home/frankola:/bin/bash
+
+
+
+
+[root@ip-172-31-44-186 ec2-user]# grep paloalto /etc/group
+paloalto:x:2901:frankola
+[root@ip-172-31-44-186 ec2-user]# grep sanfrancisco /etc/group
+sanfrancisco:x:2902:reilly
