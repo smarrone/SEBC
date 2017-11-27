@@ -1,3 +1,4 @@
+```
 [root@ip-172-31-47-134 jdk1.7.0_67-cloudera]# curl -u admin:admin "http://172.31.47.134:7180/api/v9/cm/deployment"
 {
   "timestamp" : "2017-11-03T09:21:02.345Z",
@@ -36,3 +37,4 @@
   "hostTemplates" : {
     "items" : [ ]
   }
+```
