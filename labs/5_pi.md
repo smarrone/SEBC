@@ -1,6 +1,7 @@
 ```
 [frankola@ip-172-31-39-17 ~]$ hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar pi 50 100
 ```
+```
 Number of Maps  = 50
 Samples per Map = 100
 Wrote input for Map #0
