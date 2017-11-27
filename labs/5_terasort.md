@@ -1,4 +1,7 @@
+```
 [reilly@ip-172-31-39-17 ~]$ hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar terasort /user/reilly/tgen /user/reilly/tsort
+```
+```
 17/11/03 06:49:23 INFO terasort.TeraSort: starting
 17/11/03 06:49:24 INFO hdfs.DFSClient: Created token for reilly: HDFS_DELEGATION_TOKEN owner=reilly@SMARRONE.FNG, renewer=yarn, realUser=, issueDate=1509706164927, maxDate=1510310964927, sequenceNumber=1, masterKeyId=2 on 172.31.39.17:8020
 17/11/03 06:49:24 INFO security.TokenCache: Got dt for hdfs://ip-172-31-39-17.eu-central-1.compute.internal:8020; Kind: HDFS_DELEGATION_TOKEN, Service: 172.31.39.17:8020, Ident: (token for reilly: HDFS_DELEGATION_TOKEN owner=reilly@SMARRONE.FNG, renewer=yarn, realUser=, issueDate=1509706164927, maxDate=1510310964927, sequenceNumber=1, masterKeyId=2)
@@ -208,3 +211,4 @@ Spent 1264ms computing partitions.
         File Output Format Counters
                 Bytes Written=6553600000
 17/11/03 06:55:23 INFO terasort.TeraSort: done
+```
