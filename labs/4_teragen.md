@@ -1,4 +1,7 @@
+```
 [reilly@ip-172-31-47-134 ~]$ time hadoop jar /opt/cloudera/parcels/CDH/lib/hadoop-mapreduce/hadoop-mapreduce-examples.jar teragen -Ddfs.block.size=33554432 -Dmapreduce.job.maps=12 -Dmapreduce.map.memory.mb=1024 65536000 /user/reilly/tgen
+```
+```
 17/11/03 06:03:15 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-39-184.eu-central-1.compute.internal/172.31.39.184:8032
 17/11/03 06:03:16 INFO terasort.TeraSort: Generating 65536000 using 12
 17/11/03 06:03:16 INFO mapreduce.JobSubmitter: number of splits:12
@@ -93,10 +96,10 @@
 real    1m49.054s
 user    0m6.026s
 sys     0m0.276s
+```
 
 
-
-
+```
 [reilly@ip-172-31-47-134 ~]$ hdfs dfs -ls /user/reilly/tgen
 Found 13 items
 -rw-r--r--   3 reilly reilly          0 2017-11-03 06:05 /user/reilly/tgen/_SUCCESS
@@ -112,9 +115,9 @@ Found 13 items
 -rw-r--r--   3 reilly reilly  546133400 2017-11-03 06:05 /user/reilly/tgen/part-m-00009
 -rw-r--r--   3 reilly reilly  546133300 2017-11-03 06:05 /user/reilly/tgen/part-m-00010
 -rw-r--r--   3 reilly reilly  546133300 2017-11-03 06:04 /user/reilly/tgen/part-m-00011
+```
 
-
-
+```
 [reilly@ip-172-31-47-134 ~]$ hadoop fsck -blocks /user/reilly/tgen
 DEPRECATED: Use of this script to execute hdfs command is deprecated.
 Instead use the hdfs command for it.
@@ -141,3 +144,4 @@ FSCK ended at Fri Nov 03 06:06:43 EDT 2017 in 10 milliseconds
 
 
 The filesystem under path '/user/reilly/tgen' is HEALTHY
+```
